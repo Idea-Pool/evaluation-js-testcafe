@@ -4,7 +4,7 @@
   "description": "This is a test-ware for evaluation of TestCafe test automation tools.",
   "main": "-",
   "scripts": {
-    "test": "echo \"No tests defined\" && exit 1",
+    "test": "testcafe chrome tests/*.js",
     "lint": "eslint tests --fix"
   },
   "repository": {

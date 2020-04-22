@@ -5,5 +5,6 @@ export default class AngularHomePage {
         this.angularLogoHeroSection = Selector('.hero-logo img');
         this.textInHeroSection = Selector('div.hero-headline');
         this.getStartedButton = Selector('a.button.hero-cta');
+        this.searchInput = Selector('input[type="search"]');
     }
 }
