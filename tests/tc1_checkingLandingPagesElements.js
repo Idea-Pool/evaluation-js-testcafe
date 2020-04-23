@@ -27,7 +27,9 @@ test('Get started button should be visible in the hero section', async t => {
         .expect(homePage.getStartedButton.exists).ok();
 });
 
-test('When Get started button is clicked, the url changes to /start and title should be "Getting Started with Angular: Your First App"', async t => {
+test(`When Get started button is clicked, 
+    Then the url changes to /start 
+    And title should be "Getting Started with Angular: Your First App"`, async t => {
     await t
         .click(homePage.getStartedButton);
 
