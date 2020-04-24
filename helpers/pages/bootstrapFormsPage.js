@@ -12,5 +12,8 @@ export default class BootstrapFormsPage {
         this.defaultRadioButton = Selector('input#exampleRadios1').withAttribute('type', 'radio');
         this.secondDefaultRadioButton = Selector('input#exampleRadios2').withAttribute('type', 'radio');
         this.disabledRadioButton = Selector('input#exampleRadios3').withAttribute('type', 'radio');
+
+        this.exampleSelect = Selector('select#exampleFormControlSelect1');
+        this.exampleMultiSelect = Selector('select#exampleFormControlSelect2');
     }
 }
