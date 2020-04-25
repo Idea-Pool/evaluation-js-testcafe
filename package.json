@@ -4,7 +4,11 @@
   "description": "This is a test-ware for evaluation of TestCafe test automation tools.",
   "main": "-",
   "scripts": {
+    "build": "npm install",
     "test": "testcafe chrome tests/*.js",
+    "testHeadless": "testcafe firefox:headless tests/*.js",
+    "testChromeEmulation": "testcafe 'chrome:emulation:device=iphone X' tests/*.js",
+    "testBootstrap": "testcafe chrome tests/*.js --fixture-meta page=bootstrap",
     "lint": "eslint tests --fix"
   },
   "repository": {

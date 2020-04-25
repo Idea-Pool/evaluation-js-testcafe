@@ -3,7 +3,8 @@ import AngularHomePage from '../helpers/pages/angularHomePage';
 import {getCurrentlUrl} from "../helpers/utils/helpers";
 
 fixture`TC2 - Checking Search field on Landing page`
-    .page`https://angular.io`;
+    .page`https://angular.io`
+    .meta('page','angular');
 
 const homePage = new AngularHomePage();
 

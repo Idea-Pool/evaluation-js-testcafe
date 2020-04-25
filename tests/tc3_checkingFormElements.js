@@ -1,7 +1,8 @@
 import BootstrapFormsPage from "../helpers/pages/bootstrapFormsPage";
 
 fixture`TC3 - Checking form elements`
-    .page`https://getbootstrap.com/docs/4.4/components/forms/`;
+    .page`https://getbootstrap.com/docs/4.4/components/forms/`
+    .meta('page','bootstrap');
 
 const bootstrapFormsPage = new BootstrapFormsPage();
 

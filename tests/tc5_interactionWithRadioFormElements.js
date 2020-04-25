@@ -1,7 +1,8 @@
 import BootstrapFormsPage from "../helpers/pages/bootstrapFormsPage";
 
 fixture`TC-5 Interaction with radio form elements`
-    .page`https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios`;
+    .page`https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios`
+    .meta('page','bootstrap');
 
 const bootstrapFormsPage = new BootstrapFormsPage();
 

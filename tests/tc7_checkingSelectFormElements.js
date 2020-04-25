@@ -1,7 +1,8 @@
 import BootstrapFormsPage from "../helpers/pages/bootstrapFormsPage";
 
 fixture`TC-7 Checking select form elements`
-    .page`https://getbootstrap.com/docs/4.4/components/forms/#form-controls`;
+    .page`https://getbootstrap.com/docs/4.4/components/forms/#form-controls`
+    .meta('page', 'bootstrap');
 
 const bootstrapFormsPage = new BootstrapFormsPage();
 

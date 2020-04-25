@@ -3,7 +3,8 @@ import AngularStartPage from '../helpers/pages/angularStartPage';
 import {getCurrentlUrl} from "../helpers/utils/helpers";
 
 fixture`TC1 - Checking landing pages elements`
-    .page`https://angular.io`;
+    .page`https://angular.io`
+    .meta('page','angular');
 
 const homePage = new AngularHomePage();
 const startPage = new AngularStartPage();

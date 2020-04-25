@@ -1,7 +1,8 @@
 import { Selector } from 'testcafe';
 
 fixture`TC-6 Checking button form elements`
-    .page`https://getbootstrap.com/docs/4.4/components/buttons/#disabled-state`;
+    .page`https://getbootstrap.com/docs/4.4/components/buttons/#disabled-state`
+    .meta('page', 'bootstrap');
 
 test(`Then there should be a button with text "Primary button"`, async t => {
     await t
