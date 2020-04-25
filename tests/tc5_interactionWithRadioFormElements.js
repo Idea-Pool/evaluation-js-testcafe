@@ -30,7 +30,9 @@ test(`When The second default radio is clicked on
     Then The default radio should be not selected
     And The second default radio should be selected`, async t => {
     await t
-        .click(bootstrapFormsPage.secondDefaultRadioButton)
+        .click(bootstrapFormsPage.secondDefaultRadioButton);
+
+    await t
         .expect(bootstrapFormsPage.defaultRadioButton.checked).eql(false)
         .expect(bootstrapFormsPage.secondDefaultRadioButton.checked).eql(true);
 });

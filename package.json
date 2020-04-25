@@ -5,10 +5,14 @@
   "main": "-",
   "scripts": {
     "build": "npm install",
+    "dockerPullTestcafe": "docker pull testcafe/testcafe",
+    "dockerTest": "docker run -v ~/Development/evaluation-testcafe/tests:/tests -it testcafe/testcafe chromium tests/*.js",
     "test": "testcafe chrome tests/*.js",
     "testHeadless": "testcafe firefox:headless tests/*.js",
     "testChromeEmulation": "testcafe 'chrome:emulation:device=iphone X' tests/*.js",
     "testBootstrap": "testcafe chrome tests/*.js --fixture-meta page=bootstrap",
+    "testParallel": "testcafe -c 2 safari tests/*.js --fixture-meta page=bootstrap",
+    "testRemote": "testcafe remote tests/*.js --fixture-meta page=angular --qr-code",
     "lint": "eslint tests --fix"
   },
   "repository": {

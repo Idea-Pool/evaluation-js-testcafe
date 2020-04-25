@@ -36,7 +36,9 @@ test(`When The option "2" is selected in example select
  And Thu number of options in example select should be 5`, async t => {
     await t
         .click(bootstrapFormsPage.exampleSelect)
-        .click(bootstrapFormsPage.exampleSelect.find('option').withText('2'))
+        .click(bootstrapFormsPage.exampleSelect.find('option').withText('2'));
+
+    await t
         .expect(bootstrapFormsPage.exampleSelect.value).eql('2')
         .expect(bootstrapFormsPage.exampleSelect.find('option').count).eql(5);
 });

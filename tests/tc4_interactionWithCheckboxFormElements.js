@@ -1,7 +1,9 @@
 import BootstrapFormsPage from "../helpers/pages/bootstrapFormsPage";
 
 fixture`TC-4 Interaction with checkbox form elements`
-    .page`https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios`;
+    .page`https://getbootstrap.com/docs/4.4/components/forms/#checkboxes-and-radios`
+    .meta('page', 'bootstrap');
+
 
 const bootstrapFormsPage = new BootstrapFormsPage();
 
@@ -17,6 +19,7 @@ test(`The default checkbox should be enabled
 test(`When The default checkbox is clicked on
     Then The default checkbox should be checked`, async t => {
     await t
-        .click(bootstrapFormsPage.defaultCheckbox)
-        .expect(bootstrapFormsPage.defaultCheckbox.checked).eql(true);
+        .click(bootstrapFormsPage.defaultCheckbox);
+
+    await t.expect(bootstrapFormsPage.defaultCheckbox.checked).eql(true);
 });

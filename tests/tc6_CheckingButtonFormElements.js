@@ -1,4 +1,4 @@
-import { Selector } from 'testcafe';
+import {Selector} from 'testcafe';
 
 fixture`TC-6 Checking button form elements`
     .page`https://getbootstrap.com/docs/4.4/components/buttons/#disabled-state`
@@ -24,10 +24,12 @@ test(`And The primary button should be disabled`, async t => {
 test(`When the page is scrolled down 1 page
     Then The active primary link button should not be disabled`, async t => {
     await t
-        .hover(Selector("a").withText("Primary link"))
+        .hover(Selector("a").withText("Primary link"));
+
+    await t
         .expect(Selector("a")
-            .withAttribute("role", "button")
-            .withText("Primary link")
-            .getAttribute("disabled"))
+        .withAttribute("role", "button")
+        .withText("Primary link")
+        .getAttribute("disabled"))
         .eql(undefined);
 });

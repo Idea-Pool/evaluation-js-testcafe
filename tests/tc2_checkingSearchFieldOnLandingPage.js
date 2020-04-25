@@ -28,8 +28,8 @@ test(`When it is clicked in
     Then "Directive" should be listed in the "API" section`, async t => {
     await t
         .click(homePage.searchInput)
-        .typeText(homePage.searchInput, 'directive')
-        .expect(homePage.apiSection.exists).ok();
+        .typeText(homePage.searchInput, 'directive');
+    await t.expect(homePage.apiSection.exists).ok();
 });
 
 test(`When "Directive" is clicked in the "API" section 
