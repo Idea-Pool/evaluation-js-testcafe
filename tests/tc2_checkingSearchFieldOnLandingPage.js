@@ -1,5 +1,6 @@
 import { Selector } from 'testcafe';
 import AngularHomePage from '../helpers/pages/angularHomePage';
+import {getCurrentlUrl} from "../helpers/utils/helpers";
 
 fixture`TC2 - Checking Search field on Landing page`
     .page`https://angular.io`;
@@ -37,9 +38,7 @@ test(`When "Directive" is clicked in the "API" section
         .typeText(homePage.searchInput, 'directive')
         .click(homePage.apiSection);
 
-    const getCurrentURL = await t.eval(() => window.location);
-
     await t
-        .expect(await getCurrentURL.href).eql('https://angular.io/api/core/Directive', {timeout: 3000})
+        .expect( (await getCurrentlUrl()).href).eql('https://angular.io/api/core/Directive', {timeout: 3000})
         .expect(Selector('h1#directive').innerText).eql('Directive');
 });

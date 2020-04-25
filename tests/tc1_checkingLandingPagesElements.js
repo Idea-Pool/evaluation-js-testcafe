@@ -1,5 +1,6 @@
 import AngularHomePage from '../helpers/pages/angularHomePage';
 import AngularStartPage from '../helpers/pages/angularStartPage';
+import {getCurrentlUrl} from "../helpers/utils/helpers";
 
 fixture`TC1 - Checking landing pages elements`
     .page`https://angular.io`;
@@ -33,9 +34,7 @@ test(`When Get started button is clicked,
     await t
         .click(homePage.getStartedButton);
 
-    const getCurrentURL = await t.eval(() => window.location);
-
     await t
-        .expect(await getCurrentURL.href).eql('https://angular.io/start', {timeout: 3000})
+        .expect( (await getCurrentlUrl()).href).eql('https://angular.io/start', {timeout: 3000})
         .expect(startPage.title.innerText).eql('Getting Started with Angular: Your First App');
 });
