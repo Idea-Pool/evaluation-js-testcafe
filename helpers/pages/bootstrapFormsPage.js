@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 export default class BootstrapFormsPage {
 
-    constructor () {
+    constructor() {
 
         this.title = Selector('h1#content');
         this.readOnlyInput = Selector('input[readonly].form-control');

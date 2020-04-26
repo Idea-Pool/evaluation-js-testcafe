@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm install",
     "dockerPullTestcafe": "docker pull testcafe/testcafe",
-    "dockerTest": "docker run -v ~/Development/evaluation-testcafe/tests:/tests -it testcafe/testcafe chromium tests/*.js",
+    "dockerTest": "docker run -v ${PWD}/tests/:/tests -it testcafe/testcafe 'chromium:headless --no-sandbox' /tests/*.js",
     "test": "testcafe chrome tests/*.js",
     "testHeadless": "testcafe firefox:headless tests/*.js",
     "testChromeEmulation": "testcafe 'chrome:emulation:device=iphone X' tests/*.js",
