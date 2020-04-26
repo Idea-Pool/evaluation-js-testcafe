@@ -1,27 +1,26 @@
-> To use this template, clone a new repository based on this and
-> 1. Fill out this README.md, guided by the tasks below
-> 1. Implement the test cases in the choosen framework which are listed in [TESTCASES.md](TESTCASES.md)
-> 1. Delete this quotation
-> 1. Delete tasks
+# evaluation-testcafe
 
-# evaluation-template
-
-- [ ] Update name to evaluation-(framework name) here and in pacakge.json too
-
-This is a template repository to create test-ware for evaluating certain (JS) test automation tools.
-
-- [ ] Update description to describe purpose of this repository, e.g. This is a test-ware for evaluation FRAMEWORK test automation tool.
+This is a test-ware for evaluation of TestCafe test automation tool.
 
 ## Prerequisites
 
 1. Node.js LTS
-1. [ ] Add additional prerequisites if necessary
+
 
 ## Framework used
 
-- [ ] Add name of the framework
-- [ ] Add URL to the homepage and API docs of the framework
-- [ ] Add brief description of the framework
+- testcafe
+- URL: https://github.com/DevExpress/testcafe/tree/master
+
+TestCafe itself is an open source Node.js tool operated via command line or JavaScript API. Сomplete functionality for e2e testing is provided out of the box. 
+  As for the environment, it can run on 
+- Windows, 
+- MacOS, 
+- and Linux.
+ 
+Supports desktop, mobile, remote and cloud browsers (UI or headless).
+  Tests are written in JavaScript, supporting latest features including ES2017 (for example, async/await). And since v0.16.0 TestCafe supports TypeScript.
+
 
 ## Test cases
 
@@ -33,12 +32,9 @@ The implemented test cases can be found in [TESTCASES.md](TESTCASES.md).
 npm install
 ```
 
-- [ ] Add additional setup instructions if necessary
 
 ## Execution
 
 ```bash
 npm test
 ```
-
-- [ ] Add additional instructions to run tests
