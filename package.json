@@ -8,6 +8,7 @@
     "dockerPullTestcafe": "docker pull testcafe/testcafe",
     "dockerTest": "docker run -v ${PWD}/tests/:/tests -it testcafe/testcafe 'chromium:headless --no-sandbox' /tests/*.js",
     "test": "testcafe chrome tests/*.js",
+    "testLive": "testcafe chrome tests/tc2*.js --live",
     "testHeadless": "testcafe firefox:headless tests/*.js",
     "testChromeEmulation": "testcafe 'chrome:emulation:device=iphone X' tests/*.js",
     "testBootstrap": "testcafe chrome tests/*.js --fixture-meta page=bootstrap",
