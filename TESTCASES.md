@@ -1,31 +1,11 @@
-> Write test cases which test the following actions/checks:
-> - [x] Opening an URL
-> - [x] Checking visibility
-> - [x] Checking presence
-> - [x] Checking text content
-> - [x] Clicking on element
-> - [x] Checking browser title
-> - [x] Checking browser URL
-> - [x] Checking input text
-> - [x] Checking input placeholder
-> - [x] Typing into input
-> - [x] Checking checkbox state
-> - [x] Clicking on checkbox
-> - [x] Checking radio button state
-> - [x] Clicking on radio button
-> - [x] Checking dropdown selected value
-> - [x] Checking dropdown option presence
-> - [x] Selecting from dropdown
-> - [x] Checking whether button is enabled
-> - [x] Checking whether input is readonly
-> - [x] Checking attribute of element
-> - [x] Checking number of elements
-> - [x] Selecting element by its text
-> - [ ] Checking whether element is in the viewport
-> - [x] Scrolling page
-> - [ ] Any more action/check necessary...
-
 # Test cases
+Tests can be executed on the following browsers:
+* Google Chrome
+* Firefox
+* Safari
+* Microsoft Edge
+
+If you have Docker installed and properly configured, you can run the tests on the testcafe/testcafe docker image as well.
 
 ## `TC-1` Checking landing pages elements
 
