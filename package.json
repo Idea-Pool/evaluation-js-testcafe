@@ -36,7 +36,7 @@
   "homepage": "https://github.com/szikszail/evaluation-template#readme",
   "dependencies": {
     "testcafe": "^15.1.317922",
-    "eslint": "^6.8.0",
+    "eslint": "^9.15.0",
     "husky": "^4.0.10"
   },
   "husky": {
